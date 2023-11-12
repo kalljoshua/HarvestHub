@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "787464501579",
+    "project_id": "post-harvest-c0b6a",
+    "storage_bucket": "post-harvest-c0b6a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787464501579:android:e5a0814a114be7d598d0ce",
+        "android_client_info": {
+          "package_name": "com.example.todo_list"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "787464501579-h6quaans25n80t0ja2f253cejtj56ov0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIlLGuraO5cCNhniXzHSEFZ9PEdw8K6hg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "787464501579-h6quaans25n80t0ja2f253cejtj56ov0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

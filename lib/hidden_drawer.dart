@@ -4,6 +4,8 @@ import 'package:todo_list/screen_AddTodo.dart';
 import 'package:todo_list/screen_home.dart';
 import 'package:todo_list/settings.dart';
 
+import 'screen_dashboard.dart';
+
 class HidddenDrawer extends StatefulWidget {
   const HidddenDrawer({super.key});
 
@@ -14,7 +16,7 @@ class HidddenDrawer extends StatefulWidget {
 class _HidddenDrawerState extends State<HidddenDrawer> {
   List<ScreenHiddenDrawer> _pages = [];
   final _selectedText = const TextStyle(
-    color: Color.fromARGB(255, 114, 44, 54),
+    color: Color.fromARGB(255, 44, 114, 52),
     fontWeight: FontWeight.bold,
     fontSize: 18,
   );
@@ -32,18 +34,18 @@ class _HidddenDrawerState extends State<HidddenDrawer> {
           name: "Home",
           baseStyle: _baseText,
           selectedStyle: _selectedText,
-          colorLineSelected: const Color.fromARGB(255, 114, 44, 54),
+          colorLineSelected: Color.fromARGB(255, 54, 114, 44),
         ),
-        const HomeScreen(),
+        const Dashboard(),
       ),
-      ScreenHiddenDrawer(
+      /* ScreenHiddenDrawer(
           ItemHiddenMenu(
             name: "Add Todo",
             baseStyle: _baseText,
             selectedStyle: _selectedText,
             colorLineSelected: const Color.fromARGB(255, 114, 44, 54),
           ),
-          const AddTodo()),
+          const AddTodo()), */
       ScreenHiddenDrawer(
           ItemHiddenMenu(
             name: "Profile",
@@ -59,7 +61,7 @@ class _HidddenDrawerState extends State<HidddenDrawer> {
   Widget build(BuildContext context) {
     return HiddenDrawerMenu(
       screens: _pages,
-      backgroundColorMenu: const Color(0xFFD28594),
+      backgroundColorMenu: Color.fromARGB(255, 133, 210, 133),
       initPositionSelected: 0,
       isTitleCentered: true,
       // enableShadowItensMenu: true,

@@ -46,7 +46,6 @@ class _SettingsPageState extends State<SettingsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFB76E79),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -66,7 +65,7 @@ class _SettingsPageState extends State<SettingsPage> {
                   child: Container(
                     width: 40,
                     decoration: const BoxDecoration(
-                        shape: BoxShape.circle, color: Color(0xFF8F3B48)),
+                        shape: BoxShape.circle, color: Color.fromARGB(255, 59, 143, 90)),
                     child: Align(
                       alignment: Alignment.center,
                       child: IconButton(
@@ -113,7 +112,7 @@ class _SettingsPageState extends State<SettingsPage> {
               FirebaseAuth.instance.currentUser?.email ?? 'N/A',
               style: const TextStyle(
                 fontSize: 19,
-                color: Color(0xFFF0BBC3),
+                color: Color.fromARGB(255, 11, 11, 11),
               ),
             ),
             const SizedBox(

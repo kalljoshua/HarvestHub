@@ -54,14 +54,12 @@ class AuthClass {
 
   Future<void> verifyPhone(
       String phoneNumber, BuildContext context, Function setData) async {
-    PhoneVerificationCompleted verificationCompleted =
-        (PhoneAuthCredential phoneAuthCredential) async {
+    verificationCompleted(PhoneAuthCredential phoneAuthCredential) async {
       showSnackBar(context, 'Verification Completed');
-    };
-    PhoneVerificationFailed verificationFailed =
-        (FirebaseAuthException exception) {
+    }
+    verificationFailed(FirebaseAuthException exception) {
       showSnackBar(context, exception.toString());
-    };
+    }
     PhoneCodeSent codeSent =
         (String verificationID, [int? forceResnedingtoken]) {
       showSnackBar(context, 'Verification Code Sent');

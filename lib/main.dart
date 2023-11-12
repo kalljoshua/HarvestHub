@@ -22,17 +22,17 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    MaterialColor customPrimarySwatch = const MaterialColor(0xFF8F3B48, {
-      50: Color(0xFFE3B2BD),
-      100: Color(0xFFD28594),
-      200: Color(0xFFC45D6D),
-      300: Color(0xFFB63546),
-      400: Color(0xFFA81E2F),
-      500: Color(0xFF8F3B48), // The primary color
-      600: Color(0xFF7C2D3E),
-      700: Color(0xFF672532),
-      800: Color(0xFF521925),
-      900: Color(0xFF3E0D19),
+    MaterialColor customPrimarySwatch = const MaterialColor(0xFF4B8F3B, {
+      50: Color(0xFFB2E3B2),
+      100: Color(0xFF94D285),
+      200: Color(0xFF6DC45D),
+      300: Color(0xFF46B635),
+      400: Color(0xFF2FA81E),
+      500: Color(0xFF4B8F3B), // The primary color
+      600: Color(0xFF3E7C2D),
+      700: Color(0xFF326725),
+      800: Color(0xFF255219),
+      900: Color(0xFF193E0D),
     });
     return MaterialApp(
       theme: ThemeData(primarySwatch: customPrimarySwatch),

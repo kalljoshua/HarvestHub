@@ -98,7 +98,7 @@ class _TodoCardState extends State<TodoCard> {
                               widget.title,
                               style: const TextStyle(
                                 color: Colors.white,
-                                fontSize: 18,
+                                fontSize: 60,
                               ),
                             ),
                           ),
